@@ -1,11 +1,30 @@
-body{
-    background-color: hotpink;
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-nav{
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
     background-color: cyan;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
+.nav-list a:hover {
+    background: blue;
+}
+
+.nav-list {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
 #welcome-section{
     background-color: antiquewhite;
 }
