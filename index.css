@@ -52,3 +52,35 @@ li {
     width: 100%;
     object-fit: cover;
 }
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rems;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+transition: translateY(8px);
+}
+
+@media (max-width: 28.75em) {
+    .contact-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
