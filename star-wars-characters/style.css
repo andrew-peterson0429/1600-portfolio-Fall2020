@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+figure img {
+    max-height: 12rem;
+}
