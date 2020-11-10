@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -9,10 +10,50 @@
     margin: 1rem;
 }
 
+/* --- NAVIGATION --- */
+
+nav {
+    background-color: #555;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+}
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+nav ul.menu li {
+    float:left;
+}
+
+nav ul.menu li a {
+    display: block;
+    padding: .5rem 1.5rem;
+    color: black;
+    text-decoration: none;
+    border-right: solid 1px black;
+
+}
+
+nav ul.menu li a:hover {
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+nav ul.menu li.active {
+    background-color: #d7283a;
+}
+
+/* --- MAIN --- */
+
 #main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: slategray;
 }
 
 figure {
@@ -22,3 +63,4 @@ figure {
 figure img {
     max-height: 12rem;
 }
+

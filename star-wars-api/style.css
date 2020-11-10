@@ -83,7 +83,7 @@ main {
 
 main h1 {
     font-size: 2rem;
-    color: ##FFE81F;
+    color: black;
     border-bottom: 1px solid lightslategray;
     margin-bottom: .4rem;
 }
