@@ -20,13 +20,6 @@ CreateButton("Original Trilogy",main,CreateCards,filterTest,3,"button")
 
 CreateButton("All Films",main,CreateCards,filterTest,films.length,"button")
 
-// const originalTrilogy = document.createElement('button')
-// originalTrilogy.textContent = 'Original Trilogy'
-// main.appendChild(originalTrilogy)
-
-// const othersButton = document.createElement('button')
-// othersButton.textContent = 'Other Films'
-// main.appendChild(othersButton)
 
 // CreateCards(films,3)
 function CreateCards(array,iteration){
@@ -69,3 +62,21 @@ function CreateButton(text,appendto,onClickMethod,array,amt,className){
 }
 
 //https://starwars-visualguide.com/assets/img/characters/2.jpg
+
+function getMovies(array, amt) {
+  let listContainer = document.getElementById('list-container');
+  let oldUl = document.getElementById('list');
+  oldUl.remove();
+  let newUl = document.createElement('ul'); 
+  newUl.id = 'list';
+  listContainer.appendChild(newUl);
+  for (var i = 0; i < amt; i++) {
+    let a = array[i];
+    let listItem = document.createElement('id');
+    let poster = document.createElement('img');
+    poster.src = `https://starwars-visualguide.com/assets/img/films/${i + 1}.jpg`;
+    newUl.appendChild(listItem);
+    listItem.appendChild(poster);
+  };
+};
+

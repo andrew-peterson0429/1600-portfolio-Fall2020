@@ -10,6 +10,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+header {
+    background-color: black;
+    color: yellow;
+}
+
+body {
+    background-color: slategray;
+}
 #cards{
     display: flex;
     flex-wrap: wrap;
@@ -17,14 +25,14 @@ main {
 
 }
 
-
 figure {
     margin: 1rem;
 }
 
 figcaption {
-    background-color: aqua;
+    background-color: black;
     text-align: center;
+    color: yellow;
 }
 
 .button {
