@@ -21,8 +21,14 @@ CreateButton("Original Trilogy",main,CreateCards,filterTest,3,"button")
 CreateButton("All Films",main,CreateCards,filterTest,films.length,"button")
 
 
-// CreateCards(films,3)
+//CreateCards(films,3)
+
 function CreateCards(array,iteration){
+  let oldContent = document.getElementById('content');
+  oldContent.remove();
+  let newContent = document.createElement('div');
+  newContent.id = 'content';
+  cards.appendChild(newContent);
   for (let step = 0; step < iteration; step++) {
 
       //create DOM elements
@@ -34,10 +40,9 @@ function CreateCards(array,iteration){
 
 
       //put it into HTML
-      figure.appendChild(figImg)
-      figure.appendChild(figCaption)
-
-      cards.appendChild(figure)
+      figure.appendChild(figImg);
+      figure.appendChild(figCaption);
+      newContent.appendChild(figure);
     }
 }
 
@@ -51,6 +56,7 @@ function CreateCards(array,iteration){
 
 
 function CreateButton(text,appendto,onClickMethod,array,amt,className){
+  let btnDiv = document.getElementById('btns');
   let myButton = document.createElement('button')//create button in DOM
   //create event listener for click event
   myButton.className = className
@@ -58,25 +64,5 @@ function CreateButton(text,appendto,onClickMethod,array,amt,className){
     onClickMethod(array,amt)//thing to do when clicked. This is using an argument so you can do anything
   })
   myButton.textContent = text//pass in button text
-  appendto.appendChild(myButton)//put button in your HTML so it's visible. The method lets you choose where to put it
-}
-
-//https://starwars-visualguide.com/assets/img/characters/2.jpg
-
-function getMovies(array, amt) {
-  let listContainer = document.getElementById('list-container');
-  let oldUl = document.getElementById('list');
-  oldUl.remove();
-  let newUl = document.createElement('ul'); 
-  newUl.id = 'list';
-  listContainer.appendChild(newUl);
-  for (var i = 0; i < amt; i++) {
-    let a = array[i];
-    let listItem = document.createElement('id');
-    let poster = document.createElement('img');
-    poster.src = `https://starwars-visualguide.com/assets/img/films/${i + 1}.jpg`;
-    newUl.appendChild(listItem);
-    listItem.appendChild(poster);
-  };
+  btnDiv.appendChild(myButton)//put button in your HTML so it's visible. The method lets you choose where to put it
 };
-
