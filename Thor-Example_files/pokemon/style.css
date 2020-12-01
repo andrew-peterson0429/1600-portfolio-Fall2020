@@ -1,15 +1,3 @@
-/* --- HEADER --- */
-header {
-  background-color: #003A70;
-}
-header h1 {
-  color:#FFCB05;
-  padding: 1rem 0 0 2%;
-  font-size: 2rem;
-  font-family: "Pokemon";
-}
-
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -46,11 +34,11 @@ header h1 {
   }
 
   .card__face--front {
-    background: #3D7DCA;
+    background: red;
   }
   
   .card__face--back {
-    background: #FFCB05;
+    background: #444;
     color: #eee;
     transform: rotateY(180deg);
   }
@@ -58,4 +46,3 @@ header h1 {
   .card.is-flipped {
     transform: rotateY(180deg);
   }
-
