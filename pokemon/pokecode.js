@@ -53,7 +53,10 @@ function populatePokeCard(pokemon) {
     pokeCard.className = 'card'
     pokeCard.addEventListener('click', () => {
         pokeCard.classList.toggle('is-flipped')
-    })
+        if (pokeCard.classList.contains('is-flipped')) {
+            console.log('(ノಠ益ಠ)ノ彡┻━┻');
+        };
+    });
     
     pokeCard.appendChild(populateCardFront(pokemon))
     pokeCard.appendChild(populateCardBack(pokemon))
@@ -102,7 +105,7 @@ function getBestAccuracyAndPower(pokemoves) {
         //console.log(move.move.url)
         getAPIData(move.move.url).then
             (async (data) => {
-                console.log(data.accuracy, data.power)
+                //console.log(data.accuracy, data.power)
             })
     //    return mostAccurate.accuracy > move.accuracy ? mostAccurate : move;
       }, {});
@@ -125,4 +128,4 @@ function Pokemon(name, height, weight, abilities) {
 }
 
 let drewmon = new Pokemon('Drewmon', 450, 200, ['chill', 'game'])
-console.log(drewmon)
+//console.log(drewmon)
