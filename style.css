@@ -17,6 +17,14 @@ body {
     
 }
 
+
+/* --- WRAPPER --- */
+
+div#wrapper {max-width: 960px; margin: 0 auto;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+
+}
+
 /* --- HEADER --- */
 header {
     background-color: #102548;
@@ -91,7 +99,7 @@ main h1 {
 
 main h2 {
     font-size: 1.5rem;
-    color: #FFE81F;
+    color: #102548;
     margin-bottom: .2rem;
 }
 
