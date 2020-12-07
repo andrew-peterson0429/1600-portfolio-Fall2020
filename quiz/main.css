@@ -1,0 +1,211 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* box model fix here */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* --- BODY --- */
+body {
+    font-family: 'Creepster', cursive;
+    font-weight: 300;
+    color: #333333;
+    background-color: #f27d42;
+    background-image: url(/images/oldgreggbackgroundreduced.jpg);
+    background-repeat: repeat-x;
+    font-size: 16px;
+    
+}
+
+/* --- IFRAME --- */
+.testiframe {
+    width: 50%;
+    height: 20rem;
+    border: none;
+}
+
+/* --- WRAPPER --- */
+
+#wrapper {
+  max-width: 960px; 
+  min-height:100vh;
+  box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+
+/* --- HEADER --- */
+header {
+    background-color: #102548;
+    text-align: center;
+    background-image: url(/images/oldgregglogo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 70px;
+    
+
+}
+
+header h1 {
+    color: #006305;
+    padding: 1rem 0 0 2%;
+    font-size: 2rem;
+}
+
+header h2 {
+    color: #f3f3f3;
+    padding-left: 3%;
+    font-size: .60rem;
+    letter-spacing: 5px;
+}
+
+header h3 {
+    color: #102548;
+    padding-left: .5%;
+    font-size: .86rem;
+    letter-spacing: 1px;
+}
+
+/* --- NAVIGATION --- */
+
+/*Phone nav rules here */
+@media only screen and (max-width: 600px) {
+    nav {background-color: #102548;
+        padding: .5rem 2%;
+    
+    }
+
+    nav ul.menu {
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul.menu li a {
+        border: solid 1px #f3f3f3;
+        display: block;
+        padding: .5rem 2%;
+        text-align: center;
+        background: linear-gradient(#102548, #283b5c);
+        margin-bottom: .5rem;
+        border-radius: 30px;
+        color: #f3f3f3;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    nav ul.menu li.active a {
+        background-color: #e4f125;
+    }
+
+    nav ul.menu li a:hover {
+        background-color: #c8eff9;
+}
+}
+
+/*End of phone */
+
+
+/*Desktop nav rules here */
+@media only screen and (min-width: 601px) {
+    nav {
+        background: linear-gradient(to top, #102548 0%, #283b5c 100%);
+        border-top: solid 1px #000;
+        border-bottom: solid 1px #000;
+    
+    }
+    nav ul.menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul.menu li {
+        float: left;
+    
+    }
+    
+    nav ul.menu li a {
+        display: block;
+        padding: .5rem 1.5rem;
+        color: #f3f3f3;
+        text-decoration: none;
+        border-right: solid 1px #f3f3f3;
+    
+    }
+    
+    nav ul.menu li a:hover {
+        background-color: #c8eff9;
+        color: #000;
+    }
+    
+    nav ul.menu li.active {
+        background-color: #154207;
+    }
+
+}
+
+/*End of desktop */
+
+/* --- MAIN --- */
+main {
+    padding: .5rem 2%;
+    background: linear-gradient(#5855d6, #7bdf6e);
+    
+
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #102548;
+    border-bottom: 1px solid #102548;
+    margin-bottom: .4rem;
+    
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #102548;
+    margin-bottom: .2rem;
+}
+
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+
+main a {
+    color: #424a9f;
+}
+
+main a:hover {
+    color: #55bdca;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #102548;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+/* --- OTHER --- */
+div.keepOpen {
+    clear: both;
+}
