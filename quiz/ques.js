@@ -161,4 +161,20 @@ export default
     ], 
     "correctAnswer": "The funk"
   }
+  {
+    "ques": "What does Old Gregg have that no one else does?", 
+
+    "answers": [
+      {
+        "answer": "The funk"
+      }, 
+      {
+        "answer": "Baileys"
+      }, 
+      {
+        "answer": "Curly Jefferson"
+      }
+    ], 
+    "correctAnswer": "The funk"
+  }
 ]
