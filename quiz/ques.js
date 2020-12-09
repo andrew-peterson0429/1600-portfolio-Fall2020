@@ -162,19 +162,19 @@ export default
     "correctAnswer": "The funk"
   }
   {
-    "ques": "What does Old Gregg have that no one else does?", 
+    "ques": "It's attached to ya rod...", 
 
     "answers": [
       {
-        "answer": "The funk"
+        "answer": "sucka"
       }, 
       {
-        "answer": "Baileys"
+        "answer": "daddy-o"
       }, 
       {
-        "answer": "Curly Jefferson"
+        "answer": "mutha"
       }
     ], 
-    "correctAnswer": "The funk"
+    "correctAnswer": "mutha licka"
   }
 ]
