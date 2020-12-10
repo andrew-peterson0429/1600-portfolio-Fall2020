@@ -177,4 +177,20 @@ export default
     ], 
     "correctAnswer": "mutha licka"
   }
+  {
+    "ques": "It's attached to ya rod...", 
+
+    "answers": [
+      {
+        "answer": "sucka"
+      }, 
+      {
+        "answer": "daddy-o"
+      }, 
+      {
+        "answer": "mutha"
+      }
+    ], 
+    "correctAnswer": "mutha licka"
+  }
 ]
