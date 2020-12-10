@@ -57,7 +57,7 @@ header h1 {
   }
   
   .card__face--back {
-    background: #FFCB05;
+    background-image: url(/images/pokemon/pokemoncardback.png);
     color: #eee;
     transform: rotateY(180deg);
   }
