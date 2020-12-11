@@ -2,6 +2,11 @@
 header {
   background-color: #003A70;
 }
+
+/* --- NAV --- */
+
+
+
 header h1 {
   color:#FFCB05;
   padding: 1rem 0 0 2%;
@@ -52,8 +57,15 @@ header h1 {
   }
 
   .card__face--front {
-    background: #3D7DCA;
-    padding: 12px;
+    background: #d6b01e;
+    background-image: url(/images/pokemon/frontofpokemoncard.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    
+    font-family: pokemon;
+    color: #eee;
+    
     /* filter: opacity(0%); */
     /* transform: rotateY(180deg); */
 
@@ -66,9 +78,10 @@ header h1 {
   
   .card__face--back {
     /* backface-visibility: hidden; */
-    background-image: url(/images/pokemon/pokemoncardback.png);
+    background-image: url(/images/pokemon/yugiohback.jpg);
     background-repeat: no-repeat;
     background-size: 200px, 260px;
+    font-family: pokemon;
     color: #eee;
     transform: rotateY(180deg);
     background-color: #3D7DCA;

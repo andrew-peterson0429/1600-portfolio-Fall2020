@@ -11,18 +11,20 @@ async function getAPIData(url) {
 
 let pokeArray
 
-function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
-        (async (data) => {
-            for (const pokemon of data.results) {
-                await getAPIData(pokemon.url).then((pokeData) => {
-                    populatePokeCard(pokeData)
-                    //addtoarray(pokeArray, pokeData)
-                    console.log(pokeArray)
-                })
-            }
-        })
-}
+// This is doing the same thing as PopulateButton()
+// function loadPage() {
+//     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
+//         (async (data) => {
+//             for (const pokemon of data.results) {
+//                 await getAPIData(pokemon.url).then((pokeData) => {
+//                     populatePokeCard(pokeData)
+//                     //addtoarray(pokeArray, pokeData)
+//                     console.log(pokeArray)
+//                 })
+//             }
+//         })
+// }
+
 // now, use the async getAPIData function
 function PopulateButtons() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
@@ -62,12 +64,12 @@ function fetchKantoPokemon(){
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
 
-const GetData = loadPage()
-console.log("data " + GetData)
+// const GetData = loadPage()
+// console.log("data " + GetData)
 
 loadButton.addEventListener('click', () => {
     PopulateButtons()
-    loadButton.disabled = true
+    //loadButton.disabled = true
 })
 
 /* mudsDaleButton.addEventListener('click', () => {
