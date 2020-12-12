@@ -27,35 +27,6 @@ body {
     border: none;
 }
 
-/* --- TABLES --- */
-table.sub {
-    border: 1px solid black;
-    box-shadow: 1px 3px 10px #456;
-    width: 50%;
-
-}
-
-table.sub th {
-    background: linear-gradient(#102548, #283b5c);
-    color: #f3f3f3;
-    padding: .5rem;
-}
-
-table.sub tr {
-    background-color: beige;
-    padding: .5rem;
-}
-
-table.sub tr:hover {
-    background-color: #f27d42;
-    color: #f3f3f3;
-}
-
-table.sub td {
-    padding: .5rem;
-    
-
-}
 
 /* --- WRAPPER --- */
 
