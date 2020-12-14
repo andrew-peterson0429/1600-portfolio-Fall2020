@@ -57,7 +57,7 @@ header h1 {
   }
 
   .card__face--front {
-    background: #d6b01e;
+    background: black;
     background-image: url(/images/pokemon/frontofpokemoncard.png);
     background-repeat: no-repeat;
     background-size: 120%;
