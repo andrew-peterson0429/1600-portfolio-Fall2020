@@ -1,19 +1,51 @@
 /* --- HEADER --- */
 header {
-  background-color: #003A70;
+  background-color: #9a0056;
 }
 
 /* --- NAV --- */
-
-
+nav {
+  linear-gradient:(to bottom, #11007e 0%, #2e227c 100%);
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
 
 header h1 {
-  color:#FFCB05;
+  color:#ffc100;
   padding: 1rem 0 0 2%;
   font-size: 2rem;
   font-family: "Pokemon";
 }
 
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li a {
+  display: block;
+  padding: .5rem 1.5rem;
+  color: #ffc100;
+  text-decoration: none;
+  border-right: solid 1px #f3f3f3;
+
+}
+
+nav ul.menu li a:hover {
+  background-color: #ffc100;
+  color: #000;
+}
+
+nav ul.menu li.active {
+  background-color: #580069
+}
+
+/* --- BODY --- */
+
+body {
+  background-color:	#003287;
+}
 
 * {
     margin: 0;
@@ -58,13 +90,13 @@ header h1 {
 
   .card__face--front {
     background: black;
-    background-image: url(/images/pokemon/frontofpokemoncard.png);
+    background-image: url(/images/pokemon/yugiohcardfront.png);
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 110%;
     background-position: center;
-    
+    text-align: center;
     font-family: pokemon;
-    color: #eee;
+    color: black;
     
     /* filter: opacity(0%); */
     /* transform: rotateY(180deg); */
@@ -81,6 +113,7 @@ header h1 {
     background-image: url(/images/pokemon/yugiohback.jpg);
     background-repeat: no-repeat;
     background-size: 200px, 260px;
+    text-align: center;
     font-family: pokemon;
     color: #eee;
     transform: rotateY(180deg);
