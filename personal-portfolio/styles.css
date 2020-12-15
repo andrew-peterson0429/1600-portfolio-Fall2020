@@ -106,6 +106,7 @@
   
     .project-title {
       font-size: x-large;
+      background-color: #ddd9c7;
       color: black;
       text-align: center;
     }
