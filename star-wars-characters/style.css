@@ -4,22 +4,25 @@
     box-sizing: border-box;
 }
 
-.mainHeader {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-    background-color: black;
+html {
+    height: 100%;
+    width: 100%;
 }
 
-header {
+ header {
+    height: 200px;
     background-color: black;
-    color: yellow;
+    background-image: url(/images/starwarslogo.png);
+    background-position: left;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    height: 250px;
 }
 
 /* --- NAVIGATION --- */
 
 nav {
-    background-color: #555;
+    background-color: black;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
 
@@ -38,20 +41,24 @@ nav ul.menu li {
 nav ul.menu li a {
     display: flexbox;
     padding: .5rem 1.5rem;
-    color: yellow;
+    color: white;
     background-color: black;
     text-decoration: none;
-    border-right: solid 1px yellow;
+    border: solid 1px white;
 
 }
 
 nav ul.menu li a:hover {
-    background-color: yellow;
+    background-color: #fff;
     color: #000;
 }
 
 nav ul.menu li.active {
     background-color: #d7283a;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
 }
 
 /* --- MAIN --- */
@@ -60,7 +67,7 @@ nav ul.menu li.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: slategray;
+    background-color: black;
 }
 
 figure {
@@ -70,4 +77,10 @@ figure {
 figure img {
     max-height: 12rem;
 }
+
+button {
+    color: white;
+    background-color: black;
+    margin-right: 12px;
+  }
 

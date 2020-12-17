@@ -7,6 +7,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* box model fix here */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* --- HTML --- */
+html {
+    height: 100%;
+}
+
+
 /* --- BODY --- */
 body {
     font-family: 'Signika', sans-serif;
@@ -14,27 +20,28 @@ body {
     color: #333333;
     background-color: white;
     font-size: 16px;
+    height: 100%;
     
 }
 
 /* --- HEADER --- */
 header {
+    height: 250px;
     background-color: black;
-
-}
-
-header h1 {
-    color:#FFE81F;
-    padding: 1rem 0 0 2%;
-    font-size: 1.75rem;
+    background-image: url(/images/starwarslogo.png);
+    background-position: left;
+    background-size: 400px;
+    background-repeat: no-repeat;
 }
 
 header h2 {
-    color: #FFE81F;
+    color: white;
     padding-left: 2%;
+    padding-top: 10px;
     font-size: .86rem;
     letter-spacing: 2px;
 }
+
 
 /* --- NAVIGATION --- */
 
@@ -58,9 +65,9 @@ nav ul.menu li {
 nav ul.menu li a {
     display: block;
     padding: .5rem 1.5rem;
-    color: #FFE81F;
+    color: white;
     text-decoration: none;
-    border-right: solid 1px #FFE81F;
+    border: solid 1px white;
 
 }
 
@@ -69,24 +76,29 @@ nav ul.menu li a:hover {
     color: #000;
 }
 
+/* --- BODY --- */
+
+body {
+    font-family: 'Signika', sans-serif;
+}
 
 /* --- MAIN --- */
 main {
     padding: .5rem 2%;
-    background-color: lightslategray;
-    color: black;
+    background-color: black;
+    color: white;
+    height: 100%;
 }
 
 main h1 {
     font-size: 2rem;
     color: black;
-    border-bottom: 1px solid lightslategray;
     margin-bottom: .4rem;
 }
 
 main h2 {
     font-size: 1.5rem;
-    color: #FFE81F;
+    color: white;
     margin-bottom: .2rem;
 }
 
@@ -102,36 +114,11 @@ main blockquote {
 }
 
 main a {
-    color: #d7283a;
+    color: yellow;
 }
 
 main a:hover {
-    color: #1290cf;
-}
-
-/* --- LISTS --- */
-main ul.check, main ol.bulb {
-    margin: 0 0 .8rem 0;
-    padding: 0 0 0 1rem;
-}
-
-main ul.check {
-    list-style-type: square;
-}
-
-main ol.bulb {
-    list-style-type: circle;
-}
-
-main dl dt {
-    margin: 0;
-    font-weight: 600;
-    padding: 0 0 0 1rem;
-}
-
-main dl dd {
-    margin: 0;
-    padding: 0 0 .75rem 2rem;
+    color: red;
 }
 
 /* --- FOOTER --- */
@@ -141,7 +128,7 @@ footer {
 
 footer p {
     text-align: center;
-    color: #FFE81F;
+    color: white;
     padding: .5rem;
     font-size: .8rem;
     font-weight: 600;

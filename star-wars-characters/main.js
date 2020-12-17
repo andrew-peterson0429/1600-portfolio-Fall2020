@@ -1,5 +1,5 @@
 import { people } from '../data/people.js'
-import { removeChildren, getLastNumber } from '../utils/index.js'
+import { removeChildren, getLastNumber, addStarField } from '../utils/index.js'
 
 const mainContent = document.querySelector('#main')
 
@@ -59,6 +59,4 @@ function populateDOM(characters) {
     })
 }
 
-// let theUrl = "https://swapi.co/api/people/2/"
-// let theUrl2 = "https://swapi.co/api/people/12/"
-
+addStarField(document.querySelector('body'), 1000)

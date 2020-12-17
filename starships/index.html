@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <title>Star Wars Starships</title>
 </head>
 <body>
+
     <header>
-        <h1>Starships of Star Wars</h1>
+        <h2><h2>In a DGM class far, far away...</h2></h2>
     </header>
+    
+    <nav>
+        <ul class="menu">
+          <li><a href="/star-wars-api/index.html" target="_self">Home</a></li>
+          <li class="active"><a href="/star-wars-films/index.html" target="_self">Star Wars Films</a></li>
+          <li><a href="/star-wars-characters/index.html" target="_self">Star Wars Characters</a></li>
+          <li><a href="/starships/index.html" target="_self">Star Wars StarShips</a></li>
+          <li><a href="/personal-portfolio/index.html" target="_self">Personal Portfolio</a></li>
+        </ul>
+        
     <div class="container">
         <nav class="nav">
             <ul class="navList"></ul>
         </nav>
         <main class="main"></main>
     </div>
+
     <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content">
@@ -25,8 +38,9 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
+
     <footer>
-        <p>&copy; Andrew Peterson Designs 2020</p>
+        <p>&copy; 2020 &bull; Utah Valley University &bull; Built by Andrew Peterson</p>
     </footer>
     <script src="main.js" type="module"></script>
 </body>

@@ -1,20 +1,37 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #011f52;
+}
+
 /* --- HEADER --- */
 header {
   background-color: #9a0056;
 }
 
-/* --- NAV --- */
-nav {
-  linear-gradient:(to bottom, #11007e 0%, #2e227c 100%);
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
+header {
+  width: 100%;
+  height: 300px;
+  background-image: url(/images/pokemon/yugimonlogo.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 header h1 {
   color:#ffc100;
-  padding: 1rem 0 0 2%;
+  text-align: center;
+  padding-top: 250px;
+  
   font-size: 2rem;
-  font-family: "Pokemon";
+  font-family: 'Signika', sans-serif;
+}
+
+/* --- NAV --- */
+
+nav {
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
 }
 
 nav ul.menu {
@@ -27,8 +44,7 @@ nav ul.menu li a {
   display: block;
   padding: .5rem 1.5rem;
   color: #ffc100;
-  text-decoration: none;
-  border-right: solid 1px #f3f3f3;
+  font-family: 'Signika', sans-serif;
 
 }
 
@@ -41,16 +57,27 @@ nav ul.menu li.active {
   background-color: #580069
 }
 
-/* --- BODY --- */
-
-body {
-  background-color:	#011f52;
+/* --- BUTTONS --- */
+button {
+  background-color: #9a0056;
+  color: #ffc100;
+  font-family: 'Signika', sans-serif;
 }
+
+select {
+  background-color: #9a0056;
+  color: #ffc100;
+  font-family: 'Signika', sans-serif;
+}
+
+/* --- BODY --- */
 
 * {
     margin: 0;
     box-sizing: border-box;
 }
+
+/* --- GRID --- */
 
 .pokemonGrid {
     display: flex;
@@ -65,6 +92,8 @@ body {
     margin: 10px;
     perspective: 600px;
   }
+
+/* --- CARD --- */
 
   .card {
     width: 100%;
@@ -95,7 +124,7 @@ body {
     background-size: 110%;
     background-position: center;
     text-align: center;
-    font-family: pokemon;
+    font-family: 'Signika', sans-serif;
     color: black;
     
     /* filter: opacity(0%); */
@@ -114,7 +143,7 @@ body {
     background-repeat: no-repeat;
     background-size: 200px, 260px;
     text-align: center;
-    font-family: pokemon;
+    font-family: 'Signika', sans-serif;
     color: #eee;
     transform: rotateY(180deg);
     background-color: #3D7DCA;

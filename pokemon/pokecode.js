@@ -170,8 +170,3 @@ function Pokemon(name, height, weight, abilities) {
     this.abilities = abilities
     this.id = 900
 }
-
-
-function createNewPokemon(name) {
-    return new Pokemon(name, 450, 200, ['gorge', 'sleep', 'cough'], ['thunder', 'toxic puke'])
-}
